@@ -1,0 +1,59 @@
+body{
+    /* Tipo de texto */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Color de fondo */
+    background-color: #f4f4f4;
+    /* Alineación de texto */
+    text-align: center;
+    /* Distancia entre el borde y el contenido */
+    padding: 20px;
+}
+
+/* La opción (.) hace referencia para llamar las clases que están en el HTML */
+/* La clase se puede repetir en el HTML */
+.container{
+    /* Margen que está por fuera del borde del contenedor, pero en la parte superior */
+    margin-top: 20px;
+}
+
+/* La opción (#) hace referencia para llamar los id que están en el HTML */
+/* El id es único, por lo que no se puede repetir en el HTML */
+#inputBox{
+    /* Ancho */
+    width: 50%;
+    /* Distancia que hay entre el borde y el contenido */
+    padding: 10px;
+    /* Borde de la caja */
+    border-radius: 5px;
+}
+
+#mostrarBtn{
+    /* Es a distamcia que hay entre el borde y el contenido. Para este caso con 10px de distancia entre el top y bottom y 20px entre el right y left */
+    padding: 10px 20px;
+    /* Color de fondo */
+    background-color: #28a745;
+    /* Color de texto */
+    color: white;
+    /* Borde de la caja. Sin borde */
+    border: none;
+    /* Es el borde de la caja */
+    border-radius: 5px;
+    /* Cambia el cursor al pasar sobre el botón */
+    cursor: pointer;
+}
+
+#mostrarBtn:hover{
+    /* Cambia el color de fondo al pasar el mouse por encima */
+    background-color: #218838;
+}
+
+#outputBox{
+    /* Margen que está por fuera del borde del contenedor, pero en la parte superior */
+    margin-top: 20px;
+    /* Tamaño de fuente */
+    font-size: 1.2rem;
+    /* Color de texto */
+    color: #333;
+    /* Negrita */
+    font-weight: bold;
+}

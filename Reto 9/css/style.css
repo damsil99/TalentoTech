@@ -1,0 +1,286 @@
+body {
+    /* Tipo de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Color de fondo */
+    background-color: #e5f7ff;
+    /* Color del texto */
+    color: #333;
+    /* Espacio entre líneas */
+    line-height: 1.6;
+    /* Distancia del borde hacia afuera */
+    margin: 0;
+    /* Espacio entre el borde y el contenido */
+    padding: 0;
+    /* Disposición de la caja */
+    display: flex;
+    /* Alineación del contenido por columnas */
+    flex-direction: column;
+    /* El mínimo de la altura es del 100%  de la ventana del navegador */
+    min-height: 100vh;
+}
+
+.header{
+    /* Color de fondo */
+    background-color: #006bb3;
+    /* Color del texto */
+    color: white;
+    /* Alineación del texto */
+    text-align: center;
+    /* Espacio entre el borde y el contenido */
+    padding: 10px;
+}
+
+.navbar{
+    /* Color de fondo */
+    background-color: #004080;
+    /* Color del texto */
+    color: white;
+    /* Espacio entre el borde y el contenido */
+    padding: 15px;
+    /* Se fija el menú a la pantalla */
+    position: sticky;
+    /* Que no tenga espacio en la parte superior */
+    top: 0;
+    /* Se coloca el menú por encima de otros elementos, superposición sobre otros elementos */
+    z-index: 1000;
+}
+
+.navbar ul{
+    /* Disposición de la caja en columnas (Alarga la barra del menú de forma horizontal) */
+    display: flex;
+    /* Se quitan los puntos de la lista */
+    list-style-type: none;
+    /* Se quita el margen */
+    margin: 0;
+    /* Se quita el relleno de la izquierda*/
+    padding-left: 0;
+    /* Hace que los elementos se distribuyan uniformemente */
+    justify-content: space-around;
+    /* Se permite que los elementos se ajusten a la línea */
+    flex-wrap: wrap;
+}
+
+.navbar li{
+    /* la estructura se lee así, con solo un valor 
+    - margin: 0, quita la margen a las 4 extremos de la caja
+    - margin: 0 15px, quita la margen de los lados arriba y abajo y pone 15px a los lados izquierda y derecha
+    - margin: 0 15px 0 15px, quita la margen de los lados arriba y abajo y pone 15px a los lados izquierda y derecha
+    */
+    margin: 0 15px;
+}
+
+.navbar ul li a{
+    /* Color del texto */
+    color: white;
+    /* Texto sin subrayado */
+    text-decoration: none;
+    /* Negrita */
+    font-weight: bold;
+    /* Transición del color */
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover{
+    /* Color del texto */
+    color: #ffcc00;
+}
+
+.layout-grid{
+    /* Disposición de la caja */
+    display: grid;
+    /* Espacio entre las columnas */
+    gap: 20px;
+    /* Espacio entre el borde y el contenido */
+    padding: 20px;
+    /* Número de columnas */
+    grid-template-columns: 1fr;
+    /* Disposición de 1 */
+    flex: 1;
+}
+
+.main-content{
+    /* Disposición de la caja */
+    display: grid;
+    /* Espacio entre las columnas */
+    gap: 20px;
+    /* Color de fondo */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.energia{
+    /* Color de fondo */
+    background-color: #ffffff;
+    /* Espacio entre el borde y el contenido */
+    padding: 20px;
+    /* Bordes redondeados */
+    border-radius: 10px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    /* Alineación del texto */
+    text-align: center;
+    /* Posicionamiento relativo */
+    position: relative;
+    /* El cursor cambia a puntero */
+    cursor: pointer;
+}
+
+.energia img{
+    /* Tamaño de la imagen, ajusta la imagen en el contenedor */
+    width: 100%;
+    /* Altura de la imagen */
+    height: auto;
+    /* Bordes redondeados */
+    border-radius: 10px;
+}
+
+.modal{
+    /* Disposición de la caja, también es el encargado de quitar y poner los contenedores en la pantalla (desaparece) */
+    display: none;
+    /* Posicionamiento fijo */
+    position: fixed;
+    /* Son las capas, aquí está asignado a la segunda capa */
+    z-index: 2;
+    /* Nada a la izquierda */
+    left: 0;
+    /* Nada en la parte superior */
+    top: 0;
+    /* Ancho total del contenedor */
+    width: 100%;
+    /* Altura total del contenedor */
+    height: 100%;
+    /* Se utiliza para controlar el desborde de contenido */
+    overflow: auto;
+    /* Color de fondo */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Alineación del contenido */
+    align-items: center;
+    /* Justificación del contenido */
+    justify-content: center;
+    /* Color del texto */
+    color: black;
+    /* Espacio entre el borde y el contenido */
+    padding: 20px;
+    /* Bordes redondeados */
+    border-radius: 10px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    /* Alineación del texto */
+    text-align: center;
+}
+
+.modal-content p{
+    /* Alineación del texto */
+    text-align: justify;
+}
+
+.modal-content{
+    /* Color de fondo */
+    background-color: #ffffff;
+    /* Lo que está por fuera del borde */
+    margin: auto;
+    /* Espacio entre el borde y el contenido */
+    padding: 20px;
+    /* Bordes redondeados */
+    border-radius: 10px;
+    /* Ancho */
+    width: 80%;
+    /* Máximo ancho */
+    max-width: 600px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    /* Posicionamiento relativo */
+    position: relative;
+}
+
+.close{
+    /* Posicionamiento absoluto */
+    position: absolute;
+    /* Parte superior */
+    top: 10px;
+    /* Parte derecha */
+    right: 20px;
+    /* Color del texto */
+    color: #aaa;
+    /* Tamaño de la fuente */
+    font-size: 24px;
+    /* Negrita */
+    font-weight: bold;
+    /* Cursor cambia a puntero */
+    cursor: pointer;
+    /* Transición del color */
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus{
+    /* Color del texto */
+    color: #000;
+    /* Texto sin subrayado */
+    text-decoration: none;
+    /* Negrita */
+    font-weight: bold;
+}
+
+.footer{
+    /* Color de fondo */
+    background-color: #006bb3;
+    /* Color del texto */
+    color: white;
+    /* Alineación del texto */
+    text-align: center;
+    /* Espacio entre el borde y el contenido */
+    padding: 10px;
+    /* Margen superior automático */
+    margin-top: auto;
+}
+
+.correo{
+    /* Color del texto */
+    color: #fff;
+    /* Texto sin subrayado */
+    text-decoration: none;
+    /* Transición del color */
+    transition: color 0.3s;
+}
+
+.correo:hover{
+    /* Color del texto */
+    color: #ffcc00;
+}
+
+html{
+    /* Ubica el contenido debajo de nav al dar clic */
+    scroll-padding-top: 70px;
+}
+
+/* Media queries para pantallas más pequeñas (TABLET) */
+@media(max-width: 768px) {
+    .navbar ul {
+        /* Organiza el menú por filas */
+        flex-direction: row;
+    }
+
+    .layout-grid{
+        /* Número de columnas */
+        grid-template-columns: 1fr;
+    }
+
+    .main-content{
+        /* Número de columnas */
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media queries para pantallas más pequeñas (MÓVIL) */
+@media(max-width: 480px) {
+
+    .header, .footer{
+        /* Espacio entre el borde y el contenido */
+        padding: 15px;
+    }
+
+    .energia{
+        /* Espacio entre el borde y el contenido */
+        padding: 15px;
+    }
+}

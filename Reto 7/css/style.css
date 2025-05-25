@@ -1,0 +1,152 @@
+body{
+    /* Tipo de letra */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Color de fondo */
+    background-color: #e6f7ff;
+    /* Color de texto */
+    color: #333;
+    /* Es el espacio por fuera del borde */
+    margin: 0;
+    /* Es el espacio por dentro del borde */
+    padding: 0;
+    /* Espacio entre las líneas */
+    line-height: 1.6;
+    /* Espacio entre las columnas */
+    flex-direction: column;
+    /*  */
+    display: flex;
+
+    min-height: 100vh;
+}
+
+.header{
+    /* Color de fondo */
+    background-color: #006bb3;
+    /* Color de texto */
+    color: white;
+    /* Alineación del texto centrado */
+    text-align: center;
+    /* Espacio entre el borde y el contenido */
+    padding: 20px;
+}
+
+.form-container{
+    /* E */
+    flex: 1;
+    /* Espacio entre el borde y el contenido */
+    padding: 20px;
+    /* Delimitando el ancho máximo */
+    max-width: 600px;
+    /* Es el espacio que está por fuera del borde */
+    margin: 20px auto;
+    /* Color de fondo */
+    background-color: #ffffff;
+    /* Borde Circular */
+    border-radius: 10px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+form fieldset{
+    /* Borde grosor, tipo y color */
+    border: 2px solid #006bb3;
+    /* Borde circular */
+    border-radius: 8px;
+    /* Espacio por fuera del borde abajo*/
+    margin-bottom: 20px;
+    /* Espacio entre el borde y el contenido */
+    padding: 20px;
+}
+
+form legend{
+    /* Letra en Negrita */
+    font-weight: bold;
+    /* Color de texto */
+    color: #006bb3;
+}
+
+label{
+    /* Disposición del tipo del bloque */
+    display: block;
+    /* Espacio que está afuera del borde entre el label con otros elementos pero solo en la parte superior */
+    margin-top: 20px;
+    /* Negrita */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select{
+    /* Ancho de la página */
+    width: 100%;
+    /* Espacio entre el borde y el contenido */
+    padding: 10px;
+    /* Distacia por fuera del borde en la parte superior */
+    margin-top: 5px;
+    /* Distacia por fuera del borde en la parte inferior */
+    margin-bottom: 15px;
+    /* Propiedades del borde */
+    border: 1px solid #ccc;
+    /* Borde circular */
+    border-radius: 5px;
+    /* Cuadro de texto */
+    box-sizing: border-box;
+}
+
+input[type="radio"]{
+    /* Distancia por fuera del borde al lado derecho */
+    margin-right: 5px;
+}
+
+input.radio-label{
+    /* Disposición */
+    display: inline-flex;
+    /* Alineación de los ítems */
+    align-items: center;
+    /* Margen de la derecha */
+    margin-right: 5px;
+}
+
+button[type="submit"]{
+    /* Color de fondo */
+    background-color: #006bb3;
+    /* Color de texto */
+    color: white;
+    /* Sin borde */
+    border: none;
+    /* Espacio entre el borde y el contenido */
+    padding: 15px 20px;
+    /* Centramos el texto */
+    text-align: center;
+    /* Tamaño de la fuente */
+    font-size: 16px;
+    /* Borde circular */
+    border-radius: 5px;
+    /* Cursor tipo puntero */
+    cursor: pointer;
+    /* Cambio al pasar el cursor */
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover{
+    /* Color de fondo */
+    background-color: #00509e;
+}
+
+.footer{
+    /* Color de fondo */
+    background-color: #006bb3;
+    /* Color de texto */
+    color: white;
+    /* Alineación del texto centrado */
+    text-align: center;
+    /* Espacio entre el borde y el contenido */
+    padding: 10px;
+    /* Espacio entre el borde y el contenido */
+    margin-top: auto;
+}
+
+.radio-group{
+    text-align: center;
+}

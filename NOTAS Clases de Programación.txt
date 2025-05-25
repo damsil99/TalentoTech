@@ -1,0 +1,35 @@
+RETO 1
+- Se pone el título
+- En el <body>, siempre tiene cabeza <header>
+  y el <main>
+- Está el <footer> que es para los derechos del creador
+- Para generar un hipervínculo es <a href="holi.html" Juajua </a>
+- <br> salto de línea
+
+RETO 2
+- Se está haciendo el vínculo de la hoja de estilos CSS a la 
+  página index.html
+- En el body, siempre se debe crear un header.
+- Luego del header se pone una etiqueta main, la cual se divide en secciones
+- El CSS le hace el cambio a las etiquetas y las clases de las etiquetas
+
+RETO 3
+- Contenedores "Grid"
+- Introducción a la etiquera <div>
+
+RETO 4
+- Introducción a GRID, es el seccionamiento de la página, es decir, cada etiqueta se 
+  ubica en un lugar del body
+- Introducción a <aside>, es el menú de redireccionamiento de páginas
+
+RETO 5 y RETO 6
+- Uso de grid, imágenes circulares, etc.
+
+RETO 7
+- Formularios
+- Etiqueta <form>
+- Etiqueta <fieldset>
+- Etiqueta <legend>
+- Etiqueta <label>
+- Etiqueta <input>
+

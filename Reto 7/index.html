@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Sobre Consumos Enegéticos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <!-- Título del Encabezado -->
+        <h1>Encuesta Sobre Consumos Enegéticos</h1>
+    </header>
+
+    <main class="form-container">
+
+        <!-- Contenido Principal -->
+        <form action="https://formspree.io/f/xblozlql" method="POST">
+            <!-- Marco del archivo a enviar -->
+            <fieldset>
+                <!-- Leyenda del campo -->
+                <legend> Información Personal </legend>
+
+                <!-- Etiqueta -->
+                <label for="name">Nombre Completo:</label>
+                <!-- Campo de entrada para el nombre completo -->
+                <input type="text" id="name" name="name" required placeholder="Nombre Completo">
+
+                <!-- Etiqueta -->
+                <label for="email">Correo Electrónico:</label>
+                <!-- Campo de entrada para el correo electrónico -->
+                <input type="email" id="email" name="responder_a" required placeholder="Correo Electrónico">
+
+                <!-- Etiqueta -->
+                <label for="localizacion">Ubicación [Ciudad/País]:</label>
+                <!-- Campo de entrada para la ubicación -->
+                <input type="text" id="localizacion" name="localizacion" required placeholder="Ingresa tu ubicación">
+            </fieldset>
+
+            <!-- Marco del archivo a enviar -->
+            <fieldset>
+                <!-- Leyenda del campo -->
+                <legend>Consumo Enegético Actual</legend>
+                <!-- Etiqueta -->
+                <label for="fuente_energia">Fuentes de Energía Utilizadas</label>
+                <!-- Campo de selección para las fuentes de energía -->
+                <select name="fuente_energia" id="fuente_energia" required>
+                    <!-- Opciones de selección -->
+                    <option value="">Seleccione una opción</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="gas">Gas</option>
+                    <option value="solar">Energía Solar</option>
+                    <option value="eolica">Energía Eólica</option>
+                    <option value="otra">Otra</option>
+                </select>
+
+                <!-- Etiqueta -->
+                <label for="consumo_mensual">Consumo Enegético Mensual [Kwh]: </label>
+                <!-- Campo de entrada para el consumo energético mensual -->
+                <input type="number" id="consumo_mensual" name="consumo_mensual" min="100" title="El consumo energético global en Colombia es de 157Kwh" required placeholder="Ingresa tu consumo mensual">
+            </fieldset>
+
+            <!-- Marco del archivo a enviar -->
+            <fieldset>
+                <!-- Leyenda del campo -->
+                <legend>Energías Renovables</legend>
+                <!-- Etiqueta -->
+                <label for="nivel_interes">Nivel de Interés en Energías Renovables:</label>
+                <!-- Campo de selección para el nivel de interés en energías renovables -->
+                <select name="nivel_interes" id="nivel_interes" required>
+                    <!-- Opciones de selección -->
+                    <option value="">Seleccione una opción</option>
+                    <option value="alto">Alto</option>
+                    <option value="medio">Medio</option>
+                    <option value="bajo">Bajo</option>
+                </select>
+                <div class="radio-group">
+                    <!-- Etiqueta -->
+                    <label for="disposicion">Disposición a Adoptar Energías Renovables:</label>
+                    <!-- Selección de disposición -->
+                    <input class="radio-label" type="radio" id="yes" name="disposicion" value="si" required>Si
+                    <!-- Selección de disposición -->
+                    <input class="radio-label" type="radio" id="no" name="disposicion" value="no" required>No
+                </div>
+
+
+            </fieldset>
+            <!-- Botón pa enviar encuesta -->
+            <button type="submit">Enviar Encuesta</button>
+
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Gracias por ayudarnos a enteder el consumo enegético y apoyar la transición de consumos hacia energías renovables</p>
+    
+</body>
+</html>

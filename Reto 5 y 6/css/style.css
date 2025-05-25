@@ -1,0 +1,221 @@
+body{
+    /* Es el color del fondo*/
+    background-color: #e6f7ff;
+    /* Es la fuente de la letra */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Es el color del texto */
+    color: #333;
+    /* Es el espaci entre lineas */
+    line-height: 1.6;
+    /* Es la distancia entre el borde y la parte externa */
+    margin: 0;
+    /* Es la distancia entre el borde y la parte interna */
+    padding: 0;
+    /* Que el cuerpo se comporte como una cuadrícula */
+    display: grid;
+    /* Es el largo mínimo, se acomoda de manera automática */
+    min-height: auto;
+    /* Disposición de las filas dentro del cuerpo */
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{
+    /*grid-column: 1 /-1;*/
+    /* Color del fondo */
+    background-color: #006bb3;
+    /* Posición sea relativa */
+    position: sticky;
+    /* Color del texto */
+    color: white;
+    /* Centra el texto */
+    text-align: center;
+    /* Que la posición superior no tenga un espacio */
+    top: 0;
+    /* Que la posición izquierda no tenga un espacio */
+    left: 0;
+    /* Su ancho sea automático */
+    width: auto;
+    /* Que lo trabajo en una sola capa en el eje Z */
+    z-index: 1;
+}
+
+h1{
+    margin: 0;
+}
+
+.layout-grid{
+    /* La disposición en forma de cuadrícula */
+    display: grid;
+    /* Como se comportará en términos de columnas la cuadrícula */
+    grid-template-columns: 280px 1fr;
+    /* Es la dstancia que hay entre los elementos */
+    gap: 0;
+    /* Es la distancia entre el borde y el elemento */
+    padding: 0;
+    /* Modificamos el largo */
+    height: 100vh;
+}
+
+.sidebar{
+    /*Color del fondo */
+    background-color: #92d3b2;
+    /* Distancia entre el borde y el contenido */
+    padding: 5px;
+    /* La sombra de la caja */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+
+    box-sizing: border-box;
+    /* Desplazar, dejando en estatico el menú */
+    position: sticky;
+    /* La distancia de la parte superior en cero */
+    top: 0;
+    /* La distancia de la parte izquierda en cero */
+    left: 0;
+    /* La distancia de la parte inferior en cero */
+    bottom: 0;
+    /* Me tome el 100% de la distancia de la página en la altura */
+    /*height: 100vh;*/
+    /* Se modifica el ancho */
+    width: 260px;
+}
+
+.sidebar ul{
+    /* No quiero que lleve viñetas*/
+    list-style-type: none;
+    /* Es el padding izquierdo */
+    padding-left: 0;
+}
+
+.sidebar ul li{
+    /* Margin de abajo */
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a{
+    /* Que no tenga subrayado */
+    text-decoration: none;
+    /* Color del texto */
+    color: #4e6345;
+    /* La transición del color demore 0.3s */
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover{
+    /* Color del texto */
+    color: #dbfdcd;
+    /* Negrita */
+    font-weight: bold;
+    /* La transición de color demore 0.3s */
+    transition: 0.6s;
+}
+
+.portafolio{
+    /* Disposición en cuadrícula*/
+    display: grid;
+    /* Espacio entre los elementos */
+    gap: 20px;
+    /* Margin derecha */
+    margin-right: 20px;
+    /* Margin abajo */
+    margin-bottom: 100px;
+    /* Margin arriba */
+    margin-top: 20px;
+    /* Comportamientos de las columnas */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "item1 item1 item1"
+        "item2 item3 item4"
+        "item5 item5 item5";
+    grid-template-rows: auto;
+}
+/* Bautizo de los hijos */
+.item:nth-child(1){grid-area: item1;}
+.item:nth-child(2){grid-area: item2;}
+.item:nth-child(3){grid-area: item3;}
+.item:nth-child(4){grid-area: item4;}
+.item:nth-child(5){grid-area: item5;}
+
+.item{
+    /* Color del fondo */
+    background-color: #ffffff;
+    /* Esquena de la caja en forma redonda*/
+    border-radius: 10px;
+    /* Distancia del borde al contenido */
+    padding: 15px;
+    /* Sombreado de la caja */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    /* Centrar el texto */
+    text-align: center;
+}
+
+.footer{
+    /* Color del fondo */
+    background-color: #006bb3;
+    /* Color del texto */
+    color: white;
+    /* Texto centrado */
+    text-align: center;
+    /* Distancia entre el borde y el contenido */
+    padding: 10px;
+    /* Ancho del texto */
+    width: 100%;
+    /* Fijamos al pie de página */
+    position: fixed;
+    /* No tenga espacio en la parte inferior */
+    bottom: 0;
+    /* No tenga espacio en la parte izqyuierda */
+    left: 0;
+}
+
+.correo{
+    /* No rtenga subrayado */
+    text-decoration: none;
+    /* Color del texto */
+    color: #fff;
+    /* Cambiando el tipo de letra */
+    font-stretch: condensed;
+}
+
+img{
+    /* Ancho de la imagen */
+    width: 100%;
+    /* Alto de la imagen */
+    /*height: auto;*/
+    /* Esquena de la caja en forma redonda*/
+    /*border-radius: 10px;*/
+}
+
+.imagen-circular{
+    /* Esquena de la caja en forma redonda*/
+    border-radius: 50%;
+    /* Sombra de la caja */
+    box-shadow: #333;
+    /* Ancho de la imagen */
+    width: 75%;
+}
+
+.imagen-galeria{
+    /* Esquena de la caja en forma redonda*/
+    border-radius: 50%;
+    /* Sobra de la caja */
+    box-shadow: #333;
+    /* Ancho de la imagen */
+    width: 20%;
+    /* Alto de la imagen */
+    height: auto;
+    /* Distancia entre el borde y el contenido */
+    padding: 5px;
+    /* Color del borde */
+    border: #78d678;
+    /* Estilo del borde */
+    border-style: double;
+    /* Grosor del borde */
+    border-width: 5px;
+}
+
+.icono{
+    /* Tamaño de los íconos */
+    width: 1.8em;
+    /* Alineación de los íconos */
+    vertical-align: middle;
+}

@@ -1,0 +1,107 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* Se cambia el fondo de la página*/
+    background-color: #aed2e2;
+    /* Cambio del color de la letra */
+    color: #333;
+    /* Espaciado entre renglones */
+    line-height: 1.6;
+    /* Espacio que hay después del borde */
+    margin: 0;
+    /* Es el espaciado que hay antes del borde */
+    padding: 0;
+
+}
+
+header{
+    /* Se cambia el color de fondo del encabezado */
+    background-color: #0073e6;
+    /* Se cambia el color de la letra */
+    color: white;
+    /* Se le da un espaciado al encabezado */
+    padding: 10px 0;
+    /* Se centra el texto */
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+}
+
+main{
+    /* Espacio que hay antes del borde */
+    padding: 20px;
+    /* Se le da un ancho máximo al contenido principal */
+    margin-bottom: 60px;
+    /*max-width: 800px;*/
+    /* Se centra el contenido principal 
+    margin: auto;*/
+}
+
+section{
+    /* Se le da un margen inferior a cada sección */
+    margin-bottom: 20px;
+    /* Se le da un borde a cada sección */
+    border-radius: 20px;
+    /* Se le da un espaciado a cada sección */
+    padding: 20px;
+    /* Se le da un fondo blanco a cada sección */
+    background-color: white;
+    /* Para poner sombra en la caja de la sección*/
+    box-shadow: 0 4px 8px 0 rgb(8,15,65,0.3);
+}
+
+h2{
+    /* Se le da un margen inferior a cada título de sección */
+    margin-bottom: 10px;
+    /* Se le da un color diferente a cada título de sección */
+    color: #0073e6;
+}
+
+ol{
+    /* Estilo de la lista, en este caso es en decima. Ej: 1,2,3..*/
+    list-style-type: decimal;
+    /* Disrancia de la margen izquierda*/
+    margin-left: 20px;
+}
+
+footer{
+    /* Se cambia el color de fondo del pie de página */
+    background-color: #0073e6;
+    /* Se cambia el color de la letra */
+    color: white;
+    /* Se le da un espaciado al pie de página */
+    padding: 10px 0;
+    /* Se centra el texto */
+    text-align: center;
+    /*position: fixed;*/
+    bottom: 0;
+    /* Ocupa todo el espacio del contenedor o sección*/
+    width: 100%;
+}
+
+img{
+    /* Se le da un ancho máximo a las imágenes */
+    max-width: 100%;
+    /* Se le da un alto automático a las imágenes 
+    height: auto; */
+    /* Se le da un margen inferior a las imágenes */
+    margin-bottom: 20px;
+    /* Se le da el borde a la esquina de la imagen*/
+    border-radius: 8px;
+    /* Para que las imágenes se comporte como un bloque */
+    display: block;
+    margin: 10px auto;
+}
+
+.correo{
+    /* Se le da un color diferente a los enlaces */
+    color: white;
+    /* Se le quita el subrayado a los enlaces 
+    text-decoration: none;*/
+}
+
+a{
+    /* Se le quita el subrayado a los enlaces */
+    text-decoration: none;
+}

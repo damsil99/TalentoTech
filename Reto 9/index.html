@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías Limpias en el Mundo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Energías Limpias en el Mundo</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#solar">Solar</a></li>
+            <li><a href="#eolica">Eólica</a></li>
+            <li><a href="#hidrogeno">Hidrógeno Verde</a></li>
+            <li><a href="#geotermica">Geotérmica</a></li>
+            <li><a href="#bioingenieria">Bioingeniería</a></li>
+        </ul>
+    </nav>
+
+    <!-- Aquí se definen los modales en un grid para motrar en el body -->
+    <div class="layout-grid">
+        <main class="main-content">
+            <!-- Cuando se usa el onclick, se abre una pestaña emergente -->
+            <section id="solar" class="energia" onclick="openModal('modal-solar')">
+                <h2>Solar</h2>
+                <img src="img/solar_urbano1.png" alt="Paneles solares en zonas urbanas">
+                <p>La energía solar es una fuente de energía renovable que utiliza la radiación solar para generar electricidad o calor. Es una de las energías limpias más abundantes y sostenibles.</p>
+            </section>
+
+            <section id="eolica" class="energia" onclick="openModal('modal-eolica')">
+                <h2>Eólica</h2>
+                <img src="img/parque_eolico.png" alt="Parque Eólico en una colina">
+                <p>La energía eólica aprovecha la fuerza del viento para generar electricidad. Se utiliza aerogeneradores que convierten la energía cinética del viento en energía eléctrica.</p>
+            </section>
+
+            <section id="hidrogeno" class="energia" onclick="openModal('modal-hidrogeno')">
+                <h2>Hidrógeno Verde</h2>
+                <img src="img/hidrogeno_verde.png" alt="Producción de hidrógeno verde">
+                <p>El hidrógeno verde se produce a partir de fuentes renovables, como la energía solar o eólica, mediante un proceso de electrólisis. Es una alternativa limpia y sostenible a los combustibles fósiles.</p>
+            </section>
+
+            <section id="geotermica" class="energia" onclick="openModal('modal-geotermica')">
+                <h2>Geotérmica</h2>
+                <img src="img/geotermia.png" alt="Planta geotérmica en Islandia">
+                <p>La energía geotérmica aprovecha el calor del interior de la Tierra para generar electricidad o calefacción. Es una fuente de energía renovable y sostenible.</p>
+            </section>
+
+            <section id="bioingenieria" class="energia" onclick="openModal('modal-bioingenieria')">
+                <h2>Bioingeniería</h2>
+                <img src="img/bio_combustible.png" alt="Bioingeniería en zonas rurales">
+                <p>La bioingeniería utiliza principios biológicos y de ingeniería para desarrollar soluciones sostenibles en diversos campos, como la energía, la salud y el medio ambiente.</p>
+            </section>
+        </main>
+    </div>
+
+
+    <!-- Aquí se definen los modales para cada tipo de energía, las ventanas emergentes -->
+    <div id="modal-solar" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-solar')">&times;</span>
+            <h2>Detalle sobre la energía solar</h2>
+            <p>La energía solar es una fuente de energía renovable que utiliza la radiación solar para generar electricidad o calor. Es una de las energías limpias más abundantes y sostenibles.</p>
+        </div>
+    </div>
+
+    <div id="modal-eolica" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-eolica')">&times;</span>
+            <h2>Detalle sobre la energía eólica</h2>
+            <p>La energía eólica aprovecha la fuerza del viento para generar electricidad. Se utiliza aerogeneradores que convierten la energía cinética del viento en energía eléctrica.</p>
+        </div>
+    </div>
+
+    <div id="modal-hidrogeno" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-hidrogeno')">&times;</span>
+            <h2>Detalle sobre el hidrógeno verde</h2>
+            <p>El hidrógeno verde se produce a partir de fuentes renovables, como la energía solar o eólica, mediante un proceso de electrólisis. Es una alternativa limpia y sostenible a los combustibles fósiles.</p>
+        </div>
+    </div>
+
+    <div id="modal-geotermica" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-geotermica')">&times;</span>
+            <h2>Detalle sobre la energía geotérmica</h2>
+            <p>La energía geotérmica aprovecha el calor del interior de la Tierra para generar electricidad o calefacción. Es una fuente de energía renovable y sostenible.</p>
+        </div>
+    </div>
+
+    <div id="modal-bioingenieria" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-bioingenieria')">&times;</span>
+            <h2>Detalle sobre la bioingeniería</h2>
+            <p>La bioingeniería utiliza principios biológicos y de ingeniería para desarrollar soluciones sostenibles en diversos campos, como la energía, la salud y el medio ambiente.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Creado por Daniel Mosquera Silva <a href="mailto:daniel.mosqueras@udea.edu.co" class="correo">daniel.mosqueras@udea.edu.co</a> <br> Bootcamp TalentoTech Programación - 2025</p>
+    </footer>
+
+    <script>
+        function openModal(modalId){
+            document.getElementById(modalId).style.display = "flex";
+        }
+        function closeModal(modalId){
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+</body>
+</html>

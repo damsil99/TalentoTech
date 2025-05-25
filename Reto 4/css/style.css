@@ -1,0 +1,153 @@
+body{
+    /* Es el color de fondo de la pantalla*/
+    background-color: #e6f7ff;
+    /* Es la fuente del texto */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Es el color del texto */
+    color: #333;
+    /* Es el espaciado de la intrerlínea */
+    line-height: 1.6;
+    /* Es el espaciado fuera del borde */
+    margin: 0;
+    /* Es el espaciado dentro del borde */
+    padding: 0;
+}
+
+.header{
+    /* Define desde que línea de colomna comienza el elemento y en que línea de columna termina
+    1 Indica que el elemento comienza en la primera línea vertical de la cuadrícula
+    -1 Es una forma abreviada para referirse a la última línea de la cuadrícula, contando desde el final (por eso es el signo negativo) */
+    grid-column: 1 /-1;
+    /* Es el color de fondo de la pantalla */
+    background-color: #006bb3;
+    /* Es el color del texto */
+    color: white;
+    /* Es el espaciado dentro del borde */
+    padding: 20px;
+    /* Alinea el texto al centro */
+    text-align: center;
+}
+
+h1{
+    /* Es el espaciado fuera del borde */
+    margin: 0;
+}
+
+.layout-grid{
+    /* Disposición de tipo cuadrícla */
+    display: grid;
+    /* Es el número de columnas que tiene la cuadrícula */ 
+    grid-template-columns: 1fr 2fr 2fr;
+    /* Es el número de filas que tiene la cuadrícula */
+    grid-template-rows: auto 1fr 1fr auto;
+    /* Es el espaciado entre las filas y columnas */
+    gap: 20px;
+    /* Es el espaciado fuera del borde */
+    margin: 20px;
+    /* Es el espaciado dentro del borde */
+    padding: 20px;
+    /* La estructura divido por áreas */
+    grid-template-areas: 
+        "header header header"
+        "sidebar contenido1 contenido1"
+        "sidebar contenido2 contenido3"
+        "footer footer footer";
+}
+
+.sidebar{
+    /* Asignación del área de la cuadrícula */
+    grid-area: sidebar;
+    /* Es el color de fondo del texto */
+    background-color: #92d3b2;
+    /* Es el espaciado dentro del borde */
+    padding: 15px;
+    /* Borde circular en los extremos */
+    border-radius: 15px;
+    /* La sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.sidebar ul{
+    /* Es la lista sin puntos */
+    list-style-type: none;
+    /* Está por dentro del borde al lado izquierdo */
+    padding-left: 0;
+}
+
+.sidebar h2{
+    /* Alínea el texto al centro */
+    text-align: center;
+}
+
+.sidebar ul li a{
+    /* No tuviera algún tipo de decoración en el texto */
+    text-decoration: none;
+    /* El color del texto */
+    color: #333;
+    /* Duración que va a tener para el cambio del color */
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover{
+    /* Cambio de color */
+    color: #006bb3;
+} 
+
+.contenido1{
+    /* Es la asignación del área que va a tener dicho contenido */
+    grid-area: contenido1;
+    /* Está por dentro del borde */
+    padding: 20px;
+    /* Es el color del fondo */
+    background-color: #cceeff;
+    /* Hacer el borde del radio */
+    border-radius: 10px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.contenido2{
+    /* Es la asignación del área que va a tener dicho contenido */
+    grid-area: contenido2;
+    /* Está por dentro del borde */
+    padding: 20px;
+    /* Es el color del fondo */
+    background-color: #cceeff;
+    /* Hacer el borde del radio */
+    border-radius: 10px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.contenido3{
+    /* Es la asignación del área que va a tener dicho contenido */
+    grid-area: contenido3;
+    /* Está por dentro del borde */
+    padding: 20px;
+    /* Es el color del fondo */
+    background-color: #cceeff;
+    /* Hacer el borde del radio */
+    border-radius: 10px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #006bb3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+}
+
+.correo{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.correo:hover{
+    color: rgb(169, 204, 13);
+}

@@ -1,0 +1,165 @@
+body{
+    /* Tipo de letra */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Color de fondo */
+    background-color: #e6f7ff;
+    /* Color de letra */
+    color: #333;
+    /* Espaciado entre el borde y la margen de afuera */
+    margin: 0;
+    /* Espaciado entre el borde y el contenido */
+    padding: 0;
+    /* Espaciado entre líneas */
+    line-height: 1.6;
+    /* Disposición va a ser flexible */
+    display: flex;
+    /* Dirección flexible por columnas */
+    flex-direction: column;
+    /* Mínimo de la altura 100% de la ventana del navegador */
+    min-height: 100vh;
+}
+
+.header{
+    /* Color de fondo */
+    background-color: #006bb3;
+    /* Color de letra */
+    color: white;
+    /* Centrado del texto */
+    text-align: center;
+    /* Espaciado entre el borde y el contenido */
+    padding: 20px;
+    /* Fijar la posición del encabezado */
+    position: sticky;
+    /* Para que la parte superior empiece desde arriba */
+    top: 0;
+    /* Trabajar por capas */
+    z-index: 10;
+}
+
+h1{
+    /* Tamaño de letra */
+    font-size: x-large;
+    /* Quitar la distancia que dispone el margen de h1 */
+    margin: 0;
+}
+
+.layout-grid{
+    /* Disposición de cuadrículas */
+    display: grid;
+    /* Definir las columnas de la cuadrícula, en este caso dos columnas una de 280px y otra de 1fr */
+    grid-template-columns: 280px 1fr;
+    /* Espaciado entre los elementos */
+    gap: 20px;
+    /* Espaciado entre el borde y el contenido */
+    padding: 20px;
+    flex: 1;
+}
+
+.sidebar{
+    /* Color de fondo */
+    background-color: #92d3b2;
+    /* Espaciado entre el borde y el contenido */
+    padding: 20px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    /* Altura ajustada automáticamente */
+    height: fit-content;
+    /* Fijar la posición de la barra lateral */
+    position: sticky;
+    /* Para que la parte superior empiece desde arriba */
+    top: 90px;
+    /* Alinear un elemento flexible en el eje vertical */
+    align-self: start;
+    /* Bordes redondeados */
+    border-radius: 5px;
+}
+
+.sidebar ul{
+    /* Quita los puntos del ítem del menú */
+    list-style: none;
+    /* Es la distancia entre el contenido y el borde por la izquierda */
+    padding-left: 0;
+}
+
+.sidebar ul li{
+    /* Espaciado entre los ítems del menú */
+    margin-bottom: 10px;
+    /* Bordes redondeados */
+    border-radius: 5px;
+}
+
+.sidebar ul li a{
+    /* Color de letra */
+    color: #000000;
+    /* Quita la decoración del texto */
+    text-decoration: none;
+    /* Transición suave */
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover{
+    /* Color de letra */
+    color: #005299;
+}
+
+.main-content{
+    /* Disposición flexible */
+    display: flex;
+    /* Dirección flexible por columnas */
+    flex-direction: column;
+    /* Distancia entre elementos (columnas) */
+    gap: 20px;
+}
+
+.proyecto{
+    /* Color de fondo */
+    background-color: #fff;
+    /* Espaciado entre el borde y el contenido */
+    padding: 20px;
+    /* Sombra del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    /* Bordes redondeados */
+    border-radius: 8px;
+}
+
+.proyecto p{
+    /* Parrafo tenga una alineación vertical desde abajo */
+    vertical-align: bottom;
+}
+
+.proyecto h2{
+    /* Parrafo tenga una alineación vertical desde arriba */
+    vertical-align: top;
+}
+
+.footer{
+    /* Color de fondo */
+    background-color: #006bb3;
+    /* Color de letra */
+    color: white;
+    /* Centrado del texto */
+    text-align: center;
+    /* Espaciado entre el borde y la margen de afuera arriba */
+    margin-top: auto;
+    /* Espaciado entre el borde y el contenido */
+    padding: 20px;
+}
+
+.correo{
+    /* Quita el subrayado */
+    text-decoration: none;
+    /* Color de letra */
+    color: white;
+    /* Transición para cambio del color al poner el cursor sobre el enlace */
+    transition: color 0.3s;
+}
+
+.correo:hover{
+    /* Color del cambio de letra */
+    color: #92d3b2;
+}
+
+html{
+    /* Ajusta el valor según la altura de tu header */
+    scroll-padding-top: 90px; 
+}
