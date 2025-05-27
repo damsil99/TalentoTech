@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Ahorro de Energía</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Calculadora Ahorro de Energía</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Solar</a></li>
+            <li><a href="#">Eólica</a></li>
+            <li><a href="#">Hidrogeno Verde</a></li>
+            <li><a href="#">Geotérmica</a></li>
+            <li><a href="#">Bioenergía</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout-grid">
+        <main class="main-content">
+            <section class="calculadora">
+                <h2>Calcula tu Ahorro de Energía</h2>
+                <form id="form_ahorro">
+                    <div class="form-group">
+                        <label for="consumo">Consumo Energético Actual [KWh]</label>
+                        <input type="number" id="consumo" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-energia">Tipo de Energía Renovable: </label>
+                        <select name="tipo-energia" id="tipo-energia">
+                            <option value="" disabled selected> Seleccione una opción</option>
+                            <option value="solar">Solar</option>
+                            <option value="eolica">Eólica</option>
+                            <option value="hidrogeno">Hidrógeno Verde</option>
+                        </select>
+                    </div>
+                    <button type="button" id="calcular-btn">Calcular Ahorro</button>
+                </form>
+            </section>
+
+            <section id="resultados" class="resultados hidden">
+                <h2>Resultados Ahorro Energético</h2>
+                <div class="result-card">
+                    <p><strong>Ahorro Energético: </strong><span id="ahorro-kwh"></span>Kwh</p>
+                    <p><strong>Reducciones de CO<sub>2</sub>: </strong><span id="ahorro-co2"></span>Kg</p>
+                    <p><strong>Ahorro Económico Estimado: </strong><span id="ahorro-usd"></span>USD</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>Creado por Daniel Mosquera Silva: <a class="correo" href="mailto:daniel.mosqueras@udea.edu.co">daniel.mosqueras@udea.edu.co</a><br>Bootcam de Programación - 2025</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
